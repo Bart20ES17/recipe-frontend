@@ -27,7 +27,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: node-app
-          path: dist/
+          path: .
 
   deploy-prod:
     if: github.ref == 'refs/heads/main'
