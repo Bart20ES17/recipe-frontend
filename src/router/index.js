@@ -5,11 +5,17 @@ import Recipes from '../components/Recipes.vue'
 
 Vue.use(VueRouter)
 
+
 const routes = [
   {
     path: '/recipes',
     name: 'Recipes',
     component: Recipes
+  },
+  {
+    path: '/',
+    name: 'Home',
+    redirect: '/recipes' 
   }
 ]
 
